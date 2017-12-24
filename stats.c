@@ -36,7 +36,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-                             
+                 
 
 }
 
@@ -80,7 +80,20 @@ unsigned char find_mean(unsigned char arr[], unsigned char arr_size)
 
 unsigned char find_maximum(unsigned char arr[], unsigned char arr_size)
 {
-
+	unsigned char max   = 0U;
+	unsigned char index = 0U;
+	for (index = 0; index < arr_size ; index++)
+	{
+		if (arr[index] > max)
+		{
+			max = arr[index];
+		}
+		else
+		{
+			/*	Do Nothing	*/
+		}
+	}
+	return max;
 }
 
 
