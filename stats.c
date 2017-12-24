@@ -36,7 +36,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-             
+            
 
 }
 
@@ -131,5 +131,19 @@ unsigned char find_minimum(unsigned char arr[], unsigned char arr_size)
 
 void sort_array(unsigned char arr[], unsigned char arr_size)
 {
-	
+	unsigned char index1	=	0U;
+	unsigned char index2	=	0U;
+	unsigned char temp		=	0U;
+	for (index1 = 0; index1 < (arr_size - 1); index1++)
+	{
+		for (int index2 = 0; index2 < (arr_size - index1 - 1); ++index2)
+		{
+				if (arr[index2] < arr[index2 + 1])
+				{
+					temp = arr[index2 + 1];
+					arr[index2 + 1] = arr[index2];
+					arr[index2]	=	temp;
+				}	
+		}
+	}
 }
