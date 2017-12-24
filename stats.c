@@ -9,13 +9,12 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief This file contains the functions definition and the main function
  *
- * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ahmed Wahdan
+ * @date 	24/12/2017
  *
  */
 
@@ -40,4 +39,49 @@ void main() {
 
 }
 
-/* Add other Implementation File Code Here */
+
+void print_statistics(unsigned char min, unsigned char max, unsigned char mean, unsigned char median)
+{
+
+}
+
+
+
+void print_array(unsigned char arr[], unsigned char arr_size)
+{
+
+}
+
+
+
+unsigned char find_median(unsigned char arr[], unsigned char arr_size)
+{
+
+}
+
+
+
+unsigned char find_mean(unsigned char arr[], unsigned char arr_size)
+{
+
+}
+
+
+unsigned char find_maximum(unsigned char arr[], unsigned char arr_size)
+{
+
+}
+
+
+
+unsigned char find_minimum(unsigned char arr[], unsigned char arr_size)
+{
+
+}
+
+
+
+void sort_array(unsigned char arr[], unsigned char arr_size)
+{
+	
+}
