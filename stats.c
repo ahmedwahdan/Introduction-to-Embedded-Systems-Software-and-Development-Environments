@@ -43,7 +43,10 @@ void main() {
 
 void print_statistics(unsigned char min, unsigned char max, unsigned char mean, unsigned char median)
 {
-
+	printf("Minimum value = %d\n", min);
+	printf("Maximum value = %d\n", max);
+	printf("Mean 	value = %d\n", mean);
+	printf("Median 	value = %d\n", median);
 }
 
 
