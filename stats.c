@@ -35,8 +35,19 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+   unsigned char max 		=	0U;
+   unsigned char min 		=	0U;
+   unsigned char mean 		=	0U;
+   unsigned char median 	=	0U;
   /* Statistics and Printing Functions Go Here */
-           
+   sort_array(test,SIZE);
+   print_array(test,SIZE);
+   min 		=	find_minimum(test,SIZE);
+   max 		=	find_maximum(test,SIZE);
+   mean 	=	find_mean(test,SIZE);
+   median 	=	find_median(test,SIZE);
+   print_statistics(min,max,mean,median);
+
 }
 
 
@@ -62,7 +73,7 @@ void print_array(unsigned char arr[], unsigned char arr_size)
 		printf("%3d ", arr[index]);
 
 	}
-	printf("\n");
+	printf("\n\n");
 }
 
 
