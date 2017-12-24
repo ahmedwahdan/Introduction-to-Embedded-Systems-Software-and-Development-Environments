@@ -36,7 +36,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-                 
+             
 
 }
 
@@ -100,7 +100,20 @@ unsigned char find_maximum(unsigned char arr[], unsigned char arr_size)
 
 unsigned char find_minimum(unsigned char arr[], unsigned char arr_size)
 {
-
+	unsigned char min   = 255U;
+	unsigned char index = 0U;
+	for (index = 0; index < arr_size ; index++)
+	{
+		if (arr[index] < min)
+		{
+			min = arr[index];
+		}
+		else
+		{
+			/*	Do Nothing	*/
+		}
+	}
+	return min;
 }
 
 
