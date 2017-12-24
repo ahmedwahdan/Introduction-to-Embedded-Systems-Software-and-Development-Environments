@@ -36,6 +36,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+                             
 
 }
 
@@ -49,7 +50,17 @@ void print_statistics(unsigned char min, unsigned char max, unsigned char mean, 
 
 void print_array(unsigned char arr[], unsigned char arr_size)
 {
+	unsigned char index = 0U;
+	for (index = 0; index < arr_size; index++)
+	{
+		if ((index % 4 )== 0)
+		{
+			printf("\n");
+		}
+		printf("%3d ", arr[index]);
 
+	}
+	printf("\n");
 }
 
 
