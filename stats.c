@@ -36,8 +36,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-            
-
+           
 }
 
 
@@ -70,7 +69,21 @@ void print_array(unsigned char arr[], unsigned char arr_size)
 
 unsigned char find_median(unsigned char arr[], unsigned char arr_size)
 {
+	unsigned char median_Index 	= 	0U;
+	unsigned char median_value	=	0U;
+	if (arr_size % 2)
+	{
+		median_Index	=	(arr_size / 2) + 1;
+		median_value	=	arr[median_Index];
 
+	}
+	else
+	{
+		median_Index 	=	(arr_size / 2);
+		median_value	=	((arr[median_Index] + arr[median_Index + 1]) / 2);
+
+	}
+	return median_value;
 }
 
 
