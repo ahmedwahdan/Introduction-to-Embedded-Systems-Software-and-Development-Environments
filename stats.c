@@ -74,7 +74,15 @@ unsigned char find_median(unsigned char arr[], unsigned char arr_size)
 
 unsigned char find_mean(unsigned char arr[], unsigned char arr_size)
 {
-
+	unsigned char sum   = 0U;
+	unsigned char index = 0U;
+	for (index = 0; index < arr_size ; index++)
+	{
+		
+		sum += arr[index];
+	
+	}
+	return (sum / arr_size);
 }
 
 
